@@ -1,9 +1,8 @@
 package com.mainacad;
 
 import org.apache.commons.lang3.StringUtils;
-import service.NUmberManipulationService;
+import com.mainacad.service.NumberManipulationService;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -18,7 +17,7 @@ public class ApplicationRunner {
         LOGGER.severe("Some error");
 
         int number = 12345;
-        LOGGER.info("Sum by division for " + number + " is " + NUmberManipulationService.getSumByDivision(number));
+        LOGGER.info("Sum by division for " + number + " is " + NumberManipulationService.getSumByDivision(number));
 
         StringBuilder stringBuilder = new StringBuilder("some str builder");
         StringBuffer stringBuffer = new StringBuffer("some str buffer");
@@ -58,15 +57,10 @@ public class ApplicationRunner {
 
         LOGGER.info("original " + testText + " dvfcbdx=" + StringUtils.join(words, ", "));
 
-        System.out.println("Input number");
-
-
-        // input
-        Scanner sc = new Scanner(System.in);
-        String textInput = sc.nextLine();
-
-        System.out.println(textInput);
-
+//        // input
+//        Scanner sc = new Scanner(System.in);
+//        String textInput = sc.nextLine();
+//        System.out.println(textInput);
 
     }
 }
